@@ -2,7 +2,7 @@
 
 Link <a href="https://railscontactbook.herokuapp.com/">railscontactbook.herokuapp.com</a>
 <br/>
-Note: You need to Login before start creating you contact list 
+Note: You need to Login before start creating your contact list 
 
 
 ## Preview
