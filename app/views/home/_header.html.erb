@@ -13,23 +13,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <% if user_signed_in? %>
-          <li class="nav-item">
+          <li class="nav-item ctr-re">
             <%= link_to "Add Contact", new_contact_path, class:"nav-link" %>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item ctr-re">
             <%= link_to "Edit Profile", edit_user_registration_path, class:"nav-link" %>
           </li>
         <% else %>
-          <li class="nav-item">
+          <li class="nav-item ctr-re">
             <%= link_to "About", home_about_path, class:"nav-link" %>
           </li>
           
-          <li class="nav-item">
+          <li class="nav-item ctr-re">
             <%= link_to "Documentation", home_documentation_path, class:"nav-link" %>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item ctr-re">
             <%= link_to "Quick Links", home_quicklinks_path, class:"nav-link" %>
           </li>
         <% end %>
@@ -37,16 +37,16 @@
    
       <ul class="navbar-nav">
         <% if user_signed_in? %>
-          <li class="nav-item">
-            <%= link_to (raw("<b>Sign Out</b>")), destroy_user_session_path, method: :delete, class:"btn btn-outline-warning my-2 my-sm-0" %>
+          <li class="nav-item nav-re">
+            <%= link_to (raw("<b>Sign Out</b>")), destroy_user_session_path, method: :delete, class:"btn btn-outline-warning my-2 my-sm-0 nav-re" %>
           </li>
         <% else %>
-          <li class="nav-item">
-            <%= link_to (raw("<b>Sign Up</b>")), new_user_registration_path, class:"btn btn-outline-warning my-2 my-sm-0" %>
+          <li class="nav-item nav-re">
+            <%= link_to (raw("<b>Sign Up</b>")), new_user_registration_path, class:"btn btn-outline-warning my-2 my-sm-0 nav-re" %>
           </li>
 
-          <li class="nav-item">
-            <%= link_to (raw("<b>Sign In</b>")), new_user_session_path, class:"btn btn-warning my-2 my-sm-0 ml-md-1" %>
+          <li class="nav-item nav-re">
+            <%= link_to (raw("<b>Sign In</b>")), new_user_session_path, class:"btn btn-warning my-2 my-sm-0 ml-md-1 nav-re" %>
           </li>
         <% end %>
       </ul>
