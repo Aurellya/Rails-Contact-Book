@@ -1,17 +1,22 @@
 <div class="jumbotron">
   <h1 class="display-4"><%= @contact.first_name %>  <%= @contact.last_name %></h1>
   
+  <hr/>
+
   <p class="lead">
-    <%= @contact.email %> |
-    <%= @contact.phone %> |
-    <%= @contact.instagram %> |
-    <%= @contact.twitter %> |
-    <%= @contact.facebook %> 
+    <i class="fa fa-envelope"></i>&nbsp;&nbsp;<%= @contact.email %><br/>
+    <i class="fa fa-phone" aria-hidden="true"></i></i>&nbsp;&nbsp;<%= @contact.phone %><br/>
+    <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;<%= @contact.instagram %><br/>
+    <i class="fa fa-twitter-square" aria-hidden="true"></i>&nbsp;&nbsp;<%= @contact.twitter %><br/>
+    <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;&nbsp;<%= @contact.facebook %><br/>
   </p>
 
   <br/>
   
   <%= link_to 'Edit', edit_contact_path(@contact), class:"btn btn-info" %>
+  
+  <%= link_to 'Delete', @contact, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+  
   <%= link_to 'Back', contacts_path, class:"btn btn-info" %>
 </div>
 

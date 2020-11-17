@@ -1,9 +1,14 @@
-<h1>Add New Contact</h1>
 
-<br/>
+<div class="card">
+  <div class="card-header">
+    <h4>Add New Contact</h4>
+  </div>
+  <div class="card-body">
+    <%= render 'form', contact: @contact %>
+    <br/>
+    <%= link_to 'Back', contacts_path, class:"btn btn-info" %>
+  </div>
+</div>
 
-<%= render 'form', contact: @contact %>
 
-<br/>
 
-<%= link_to 'Back', contacts_path, class:"btn btn-info" %>

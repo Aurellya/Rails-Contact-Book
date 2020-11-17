@@ -1,55 +1,55 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-  <div class="navbar-brand">
-    <div class="navbar-item title is-4">
-        <%= link_to (raw("<i class='fa fa-address-book'></i> Contacts")), root_path, class:"navbar-brand" %>
+  <div class="container">
+    <div class="navbar-brand">
+      <div class="navbar-item title is-4">
+          <%= link_to (raw("<i class='fa fa-address-book'></i> Contacts")), root_path, class:"navbar-brand" %>
+      </div>
+    </div>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to "Add Contact", new_contact_path, class:"nav-link" %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to "Edit Profile", edit_user_registration_path, class:"nav-link" %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "About", home_about_path, class:"nav-link" %>
+          </li>
+          
+          <li class="nav-item">
+            <%= link_to "Documentation", home_documentation_path, class:"nav-link" %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to "Quick Links", home_quicklinks_path, class:"nav-link" %>
+          </li>
+        <% end %>
+      </ul>
+   
+      <ul class="navbar-nav">
+        <% if user_signed_in? %>
+          <li class="nav-item">
+            <%= link_to (raw("<b>Sign Out</b>")), destroy_user_session_path, method: :delete, class:"btn btn-outline-warning my-2 my-sm-0" %>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to (raw("<b>Sign Up</b>")), new_user_registration_path, class:"btn btn-outline-warning my-2 my-sm-0" %>
+          </li>
+
+          <li class="nav-item">
+            <%= link_to (raw("<b>Sign In</b>")), new_user_session_path, class:"btn btn-warning my-2 my-sm-0 ml-md-1" %>
+          </li>
+        <% end %>
+      </ul>
     </div>
   </div>
- 
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <%= link_to "About", home_about_path, class:"nav-link" %>
-      </li>
-
-      <li class="nav-item">
-        <%= link_to "Contacts", contacts_path, class:"nav-link" %>
-      </li>
-
-      <% if user_signed_in? %>
-       <li class="nav-item">
-        <%= link_to "Add Contact", new_contact_path, class:"nav-link" %>
-        </li>
-
-        <li class="nav-item">
-          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class:"nav-link" %>
-        </li>
-
-        <li class="nav-item">
-          <%= link_to "Edit Profile", edit_user_registration_path, class:"nav-link" %>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Sign Up", new_user_registration_path, class:"nav-link" %>
-        </li>
-
-        <li class="nav-item">
-          <%= link_to "Sign In", new_user_session_path, class:"nav-link" %>
-        </li>
-      <% end %>
-
-     
-    </ul>
-
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"><b>Search</b></button>
-    </form>
-  </div>
-
 </nav>
