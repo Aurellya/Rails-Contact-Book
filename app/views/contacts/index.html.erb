@@ -39,6 +39,6 @@
 
   <%= link_to "New Contact", new_contact_path, class:"btn btn-info" %>
 <% else %>
-  <h2>HomePage</h2>
+  <%= render file: "/home/index" %>
 <% end %>
 

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root 'contacts#index'
 
+  get 'home/index'
   get 'home/about'
   get 'home/documentation'
   get 'home/quicklinks'
