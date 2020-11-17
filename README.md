@@ -5,7 +5,7 @@ Link <a href="https://railscontactbook.herokuapp.com/">railscontactbook.herokuap
 Note: You need to Login before start creating your contact list 
 
 
-## Preview
+## Preview [Responsive]
 
 #### Home Page
 <img src="https://user-images.githubusercontent.com/58356073/99382480-95d1da00-2907-11eb-99fa-ce3bf054aae2.png" width="700" height="auto">
