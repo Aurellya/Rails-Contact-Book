@@ -1,6 +1,6 @@
 # Contact Book Web App
 
-Link <a href="https://railscontactbook.herokuapp.com/">railscontactbook.herokuapp.com/</a>
+Link <a href="https://railscontactbook.herokuapp.com/">railscontactbook.herokuapp.com</a>
 
 
 ## Preview
