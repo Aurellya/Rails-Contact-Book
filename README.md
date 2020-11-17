@@ -13,13 +13,13 @@ Link <a href="#">link</a>
 
 #### Sign Up Page
 <img src="https://user-images.githubusercontent.com/58356073/99382484-966a7080-2907-11eb-9ca3-24242dd371ba.png" width="700" height="auto">
-<br/>
+
 #### Contact List Page
 <img src="https://user-images.githubusercontent.com/58356073/99382473-936f8000-2907-11eb-9fc7-72e5ece44b68.png" width="700" height="auto">
 
 #### View Details Page
 <img src="https://user-images.githubusercontent.com/58356073/99382485-97030700-2907-11eb-92f0-d0476a352d80.png" width="700" height="auto">
-<br/>
+
 #### Add Contact Page
 <img src="https://user-images.githubusercontent.com/58356073/99382471-910d2600-2907-11eb-8939-7777f2ec9fb8.png" width="700" height="auto">
 
